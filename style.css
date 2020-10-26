@@ -1,0 +1,143 @@
+.ball {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  /* border: 1px dotted black; */
+  padding: 20px;
+  margin: 50px;
+  border-radius: 100%;
+  /* border-radius: 100px; */
+  -webkit-box-shadow: 11px -15px 30px -6px rgba(0,0,0,0.53);
+  -moz-box-shadow: 11px -15px 30px -6px rgba(0,0,0,0.53);
+  box-shadow: 11px -15px 30px -6px rgba(0,0,0,0.53);
+  
+}
+
+/* A partir de 750px, aplica estos estilos */
+@media (min-width: 750px){
+  .ball {
+    background-color: coral;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/* Aplica estos estilos hasta que la pantalla mida 300px */
+/* @media (max-width: 300px){
+  .ball {
+    background-color: green;
+  }
+} */
+
+/* A partir de 750px, aplica estos estilos */
+/* @media (min-width: 750px){
+  .ball {
+    background-color: coral;
+  }
+} */
+
+@media (min-width: 650px) and (max-width: 999px) {
+  .ball {
+    background-color: red;
+  }
+}
+
+
+
+/* ---------------------------------------------------------------------- */
+
+body {
+  margin: 0;
+}
+
+html {
+  font-size: 50px;
+}
+
+.square {
+  /* height: 200px; */
+  display: inline-block;
+  width: 50vw;
+  height: 100vh;
+  font-size: 50px;
+  /* background-color: rgb(163, 220, 87, 1); */
+  /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
+  background-image: linear-gradient(to right, red , yellow);
+}
+
+.square p {
+ font-size: 1rem;
+ line-height: 1.2rem;
+}
+
+.my-flex-container{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: center;
+  background-color: aqua;
+  align-items: center;
+  align-content: center;
+}
+
+.my-flex-square{
+  height: 100px;
+  width: 100px;
+  background-color: indianred;
+  border: 1px solid black;
+}
+
+.little-square {
+  width: 20px;
+  height: 20px;
+  background-color: greenyellow;
+  border: 1px solid black;
+}
+
+#my-special-square{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-image{
+  width: 200px;
+  height: 200px;
+  background-color: peru;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.my-second-section{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 41.7px;
+  text-align: center;
+}
+
+
+@media (min-width: 400px){
+  h1 {
+    font-size: 10vw;
+  }
+}
+
+@media (min-width: 1000px){
+  h1{
+    font-size: 116px;
+  }
+}
+
